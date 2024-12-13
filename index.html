@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Expenses Chart Component</title>
+
+  <!-- Custom styles -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div id="dashboard" class="dashboard">
+    <!-- Balance Section -->
+    <div id="balance-section" class="balance" aria-label="User balance">
+      <p>My balance</p>
+      <h1 id="balance-amount">$921.48</h1>
+      <div id="toggle-menu" class="toggle" aria-label="Toggle menu"></div>
+    </div>
+
+    <!-- Chart Section -->
+    <div id="chart-section" class="chart">
+      <h2>Spending – Last 7 days</h2>
+      
+      <div id="bars-container" class="bars">
+        <!-- Bars representing spending -->
+        <div id="bar-mon" class="bar" style="height: 20%;" data-amount="$10.50" aria-label="Monday: $10.50"></div>
+        <div id="bar-tue" class="bar" style="height: 50%;" data-amount="$25.80" aria-label="Tuesday: $25.80"></div>
+        <div id="bar-wed" class="bar active" style="height: 70%;" data-amount="$52.36" aria-label="Wednesday: $52.36"></div>
+        <div id="bar-thu" class="bar" style="height: 40%;" data-amount="$31.07" aria-label="Thursday: $31.07"></div>
+        <div id="bar-fri" class="bar" style="height: 60%;" data-amount="$40.00" aria-label="Friday: $40.00"></div>
+        <div id="bar-sat" class="bar" style="height: 50%;" data-amount="$20.80" aria-label="Saturday: $20.80"></div>
+        <div id="bar-sun" class="bar" style="height: 30%;" data-amount="$15.00" aria-label="Sunday: $15.00"></div>
+      </div>
+
+      <!-- Day Labels -->
+      <div id="day-labels" class="descript">
+        <p id="label-mon">mon</p>
+        <p id="label-tue">tue</p>
+        <p id="label-wed">wed</p>
+        <p id="label-thu">thu</p>
+        <p id="label-fri">fri</p>
+        <p id="label-sat">sat</p>
+        <p id="label-sun">sun</p>
+      </div>
+
+      <!-- Monthly Total -->
+      <div id="monthly-total" class="total">
+        <p>Total this month</p>
+        <h1 id="total-amount">$478.33</h1>
+        <p id="total-change">+2.4% from last month</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
